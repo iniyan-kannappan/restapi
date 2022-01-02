@@ -1,35 +1,35 @@
 # restapi
 
-Clone into an empty github repository. Move inside 
-Run this line into terminal: django-admin startproject mysite
-Run this line into terminal while inside restapi/mysite: python manage.py startapp myapi
-Install django-heroku.
-Add these lines to settings.py: import django_heroku        
-                                django_heroku.settings(locals())
-Run these line into terminal: heroku login
-                              heroku create
-In terminal, in restapi/mysite, run pip freeze > requirements.txt
-Then run these lines: git add .
-                      git commit -m "Deploying into heroku"
-                      git push origin master
-To connect with heroku: heroku git:remote <name created while running heroku create>
-                        git push heroku main
-Run this line into terminal: pip install gunicorn
-Create a file named Procfile in the same level as manage.py and put this line inside of the file: web: gunicorn <app name put while running python manage.py startapp>.wsgi
-Run this line into terminal: pip freeze > requirements.txt
-Push into git and then run: git push heroku master
-If you get this error:
-remote:        SyntaxError: invalid syntax
-remote:  !     Error while running '$ python manage.py collectstatic --noinput'.
-remote:        See traceback above for details.
+Clone into an empty github repository. Move inside the directory.</br>
+Run this line into terminal: django-admin startproject mysite</br>
+Run this line into terminal while inside restapi/mysite: python manage.py startapp myapi</br>
+Install django-heroku.</br>
+Add these lines to settings.py: import django_heroku    </br>    
+                                django_heroku.settings(locals())</br>
+Run these line into terminal: heroku login</br>
+                              heroku create</br>
+In terminal, in restapi/mysite, run pip freeze > requirements.txt</br>
+Then run these lines: git add .</br>
+                      git commit -m "Deploying into heroku"</br>
+                      git push origin master</br>
+To connect with heroku: heroku git:remote <name created while running heroku create></br>
+                        git push heroku main</br>
+Run this line into terminal: pip install gunicorn</br>
+Create a file named Procfile in the same level as manage.py and put this line inside of the file: web: gunicorn <app name put while running python manage.py startapp>.wsgi</br>
+Run this line into terminal: pip freeze > requirements.txt</br>
+Push into git and then run: git push heroku master</br>
+If you get this error:</br>
+remote:        SyntaxError: invalid syntax</br>
+remote:  !     Error while running '$ python manage.py collectstatic --noinput'.</br>
+remote:        See traceback above for details.</br>
 remote:
-remote:        You may need to update application code to resolve this error.
-remote:        Or, you can disable collectstatic for this application:
-remote:
-remote:           $ heroku config:set DISABLE_COLLECTSTATIC=1
-remote:
-remote:        https://devcenter.heroku.com/articles/django-assets
-Run into terminal: heroku config:set DISABLE_COLLECTSTATIC=1
-Run: heroku open
-If it works, follow this link: https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c
-Run: pip freeze > requirements.txt before pushing into heroku.
+remote:        You may need to update application code to resolve this error.</br>
+remote:        Or, you can disable collectstatic for this application:</br>
+remote:</br>
+remote:           $ heroku config:set DISABLE_COLLECTSTATIC=1</br>
+remote:</br>
+remote:        https://devcenter.heroku.com/articles/django-assets</br>
+Run into terminal: heroku config:set DISABLE_COLLECTSTATIC=1</br>
+Run: heroku open</br>
+If it works, follow this link: https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c</br>
+Run: pip freeze > requirements.txt before pushing into heroku.</br>
