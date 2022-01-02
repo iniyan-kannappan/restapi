@@ -12,10 +12,10 @@ In terminal, in restapi/mysite, run pip freeze > requirements.txt</br>
 Then run these lines: git add .</br>
                       git commit -m "Deploying into heroku"</br>
                       git push origin master</br>
-To connect with heroku: heroku git:remote <name created while running heroku create></br>
+To connect with heroku: heroku git:remote name created while running heroku create</br>
                         git push heroku main</br>
 Run this line into terminal: pip install gunicorn</br>
-Create a file named Procfile in the same level as manage.py and put this line inside of the file: web: gunicorn <app name put while running python manage.py startapp>.wsgi</br>
+Create a file named Procfile in the same level as manage.py and put this line inside of the file: web: gunicorn app name put while running python manage.py startapp.wsgi</br>
 Run this line into terminal: pip freeze > requirements.txt</br>
 Push into git and then run: git push heroku master</br>
 If you get this error:</br>
